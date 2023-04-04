@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_appearance">#546E0C11</color>
+    <color name="color_appearance_logo">#40FBF9F9</color>
+    <color name="colorPrimary">#1C1C1C</color>
+    <color name="gradient">#000000</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#6E0C11</color>
+    <color name="silver">#ababab</color>
+    <color name="lightblack">#1C1C1C</color>
+    <color name="white">#ffffff</color>
+    <color name="darkwhite">#FBF9F9</color>
+    <color name="lightsilver">#BDBDBD</color>
+    <color name="colorgreen">#098D00</color>
+    <color name="red">#E90404</color>
+    <color name="white22">#9AFFFFFF</color>
+</resources>

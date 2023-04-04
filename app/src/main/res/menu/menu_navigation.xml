@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_new_home"
+        android:fontFamily="@font/tajawal_bold"
+        android:textSize="@dimen/_14ssp"/>
+    <item android:id="@+id/notification"
+        android:title="@string/notification"
+        android:icon="@drawable/ic_notifications"
+        android:fontFamily="@font/tajawal_bold"
+        android:textSize="@dimen/_14ssp"/>
+    <item android:id="@+id/commercials"
+        android:title="@string/advertisment"
+        android:icon="@drawable/ic__discount"
+        android:fontFamily="@font/tajawal_bold"
+        android:textSize="@dimen/_14ssp"/>
+    <item android:id="@+id/settings"
+        android:title="@string/myaccount"
+        android:icon="@drawable/ic__user"
+        android:fontFamily="@font/tajawal_bold"
+        android:textSize="@dimen/_14ssp"/>
+</menu>

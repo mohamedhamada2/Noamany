@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="governmentviewmodel"
+            type="com.alatheer.noamany.GovernmentViewModel" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:context=".Activities.GovernmentActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white22"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/logo1"/>
+            <TextView
+                android:id="@+id/txt_welcome"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/welcome"/>
+            <TextView
+                android:id="@+id/txt_choose"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/choose_city"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/spinner_item"
+                android:layout_margin="@dimen/_20sdp"/>
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/btn_login_red"
+                android:layout_margin="@dimen/_20sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                android:text="@string/confirm"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:src="@drawable/ic_chevron_right_white"/>
+            <TextView
+                android:id="@+id/txt_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parcode"
+                android:fontFamily="@font/tajawal_bold"
+                android:textSize="@dimen/_14ssp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/barcode_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/barcode_img"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/txt_member_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/member_no"
+                android:fontFamily="@font/tajawal_bold"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/member_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/lightblack"
+                android:fontFamily="@font/tajawal_medium"
+                android:textSize="@dimen/_14ssp"
+                android:text="lllll"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

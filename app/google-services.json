@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "880923941591",
+    "firebase_url": "https://noamany-5ac59-default-rtdb.firebaseio.com",
+    "project_id": "noamany-5ac59",
+    "storage_bucket": "noamany-5ac59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880923941591:android:35cefa1e626edc4d31ee92",
+        "android_client_info": {
+          "package_name": "com.alatheer.noamany"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880923941591-b844e4nk0dngp5pppivqs544sb32mojh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alatheer.noamany",
+            "certificate_hash": "4485a3234106b1961fa97f11595d1745db1517d1"
+          }
+        },
+        {
+          "client_id": "880923941591-668q7sfhq3t8iptiev5otdrfgt9islkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCksN1VYugfu3XBJk8rrrHIhiudmMGk5Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880923941591-668q7sfhq3t8iptiev5otdrfgt9islkn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880923941591:android:711dfe94a7d0a68431ee92",
+        "android_client_info": {
+          "package_name": "com.violetsoft.lawyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880923941591-26qotdpltiuvhnvvp668mqqhqopismnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.violetsoft.lawyer",
+            "certificate_hash": "4485a3234106b1961fa97f11595d1745db1517d1"
+          }
+        },
+        {
+          "client_id": "880923941591-668q7sfhq3t8iptiev5otdrfgt9islkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCksN1VYugfu3XBJk8rrrHIhiudmMGk5Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880923941591-668q7sfhq3t8iptiev5otdrfgt9islkn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
