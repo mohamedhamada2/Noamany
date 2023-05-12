@@ -37,20 +37,20 @@
                     android:layout_alignParentLeft="true"
                     android:layout_marginTop="@dimen/_10sdp"/>
             </RelativeLayout>
-            <Button
-                android:id="@+id/btn_subscripe"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_supscripe_now"
-                android:textColor="@color/white"
-                android:fontFamily="@font/tajawal_black"
-                android:textSize="@dimen/_15ssp"
-                android:text="إشترك الأن"
-                android:gravity="center"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_10sdp"/>
+<!--            <Button-->
+<!--                android:id="@+id/btn_subscripe"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/btn_supscripe_now"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/tajawal_black"-->
+<!--                android:textSize="@dimen/_15ssp"-->
+<!--                android:text="إشترك الأن"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:layout_marginLeft="@dimen/_10sdp"/>-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

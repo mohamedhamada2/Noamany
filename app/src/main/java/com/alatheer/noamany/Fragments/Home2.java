@@ -89,8 +89,8 @@ public class Home2 extends Fragment {
     TextView txt_points;
     @BindView(R.id.txt_inbody)
     TextView txt_inbody;
-    @BindView(R.id.btn_subscripe)
-    Button btn_subscripe;
+//    @BindView(R.id.btn_subscripe)
+//  //  Button btn_subscripe;
     String language;
     Resources resources;
     Context context;
@@ -132,17 +132,17 @@ public class Home2 extends Fragment {
 
             }
         });
-        btn_subscripe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment fragment = new AddSubscriptionFragment();
-
-                FragmentManager fragmentManager = getFragmentManager();
-
-                fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
-
-            }
-        });
+//        btn_subscripe.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Fragment fragment = new AddSubscriptionFragment();
+//
+//                FragmentManager fragmentManager = getFragmentManager();
+//
+//                fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
+//
+//            }
+//        });
         exercise_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
