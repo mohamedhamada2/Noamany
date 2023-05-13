@@ -6,8 +6,8 @@ android {
         applicationId "com.alatheer.noamany"
         minSdkVersion 23
         targetSdkVersion 31
-        versionCode 46
-        versionName "5.5"
+        versionCode 47
+        versionName "5.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
