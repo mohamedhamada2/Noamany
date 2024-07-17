@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
+import com.alatheer.noamany.Activities.HomeActivity;
 import com.alatheer.noamany.Activities.PaymentActivity;
 import com.alatheer.noamany.Data.Remote.AllSubscription.AddSubscriptionModel;
 import com.alatheer.noamany.Data.Remote.AllSubscription.AllSubscription;
@@ -139,7 +140,7 @@ public class AddSubscriptionViewModel {
     }
 
     public void add_subscription(String user_id, String branch_id, String subscription_id, String price, String start_date, String end_date, String gender_id,String govern_id) {
-        Intent intent = new Intent(context, PaymentActivity.class);
+        /*Intent intent = new Intent(context, PaymentActivity.class);
         intent.putExtra("user_id",user_id);
         intent.putExtra("branch_id",branch_id);
         intent.putExtra("subscription_id",subscription_id);
@@ -150,30 +151,60 @@ public class AddSubscriptionViewModel {
         intent.putExtra("govern_id",govern_id);
         //intent.putExtra("subscription_id",response.body().getId());
         context.startActivity(intent);
-        addSubscriptionFragment.finish();
-        /*if (Utilities.isNetworkAvailable(context)){
-            GetDataService getDataService = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
-            Call<AddSubscriptionModel> call = getDataService.add_subscription(user_id,branch_id,subscription_id,price,start_date,end_date,gender_id);
-            call.enqueue(new Callback<AddSubscriptionModel>() {
-                @Override
-                public void onResponse(Call<AddSubscriptionModel> call, Response<AddSubscriptionModel> response) {
-                    if (response.isSuccessful()){
-                        if (response.body().getSuccess()==1){
-                            Intent intent = new Intent(context, PaymentActivity.class);
+        addSubscriptionFragment.finish();*/
+        if (Utilities.isNetworkAvailable(context)){
+            if (govern_id.equals("1")){
+                GetDataService getDataService = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
+                Call<AddSubscriptionModel> call = getDataService.add_subscription(user_id,branch_id,subscription_id,price,start_date,end_date,gender_id);
+                call.enqueue(new Callback<AddSubscriptionModel>() {
+                    @Override
+                    public void onResponse(Call<AddSubscriptionModel> call, Response<AddSubscriptionModel> response) {
+                        if (response.isSuccessful()){
+                            if (response.body().getSuccess()==1){
+                            /*Intent intent = new Intent(context, PaymentActivity.class);
+                            intent.putExtra("id",response.body().getCost());
+                            intent.putExtra("subscription_id",response.body().getId());
+                            context.startActivity(intent);*/
+                            addSubscriptionFragment.finish();
+
+                            }else {
+                                Toast.makeText(context, response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<AddSubscriptionModel> call, Throwable t) {
+
+                    }
+                });
+            }else {
+                GetDataService getDataService = RetrofitClientInstance.getRetrofitInstance2().create(GetDataService.class);
+                Call<AddSubscriptionModel> call = getDataService.add_subscription(user_id,branch_id,subscription_id,price,start_date,end_date,gender_id);
+                call.enqueue(new Callback<AddSubscriptionModel>() {
+                    @Override
+                    public void onResponse(Call<AddSubscriptionModel> call, Response<AddSubscriptionModel> response) {
+                        if (response.isSuccessful()){
+                            if (response.body().getSuccess()==1){
+                                addSubscriptionFragment.finish();
+                            /*Intent intent = new Intent(context, PaymentActivity.class);
                             intent.putExtra("id",response.body().getCost());
                             intent.putExtra("subscription_id",response.body().getId());
                             context.startActivity(intent);
-                            addSubscriptionFragment.finish();
+                            addSubscriptionFragment.finish();*/
 
+                            }else {
+                                Toast.makeText(context, response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
-                }
 
-                @Override
-                public void onFailure(Call<AddSubscriptionModel> call, Throwable t) {
+                    @Override
+                    public void onFailure(Call<AddSubscriptionModel> call, Throwable t) {
 
-                }
-            });
-        }*/
+                    }
+                });
+            }
+        }
     }
 }
