@@ -28,6 +28,7 @@ android {
         // for view binding:
         // viewBinding true
     }
+    namespace 'com.alatheer.noamany'
 }
 def sizes_version = '1.0.6'
 dependencies {
